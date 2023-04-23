@@ -1,0 +1,27 @@
+def add(p,q):
+  return p+q
+def sub(p,q):
+  return p-q
+def mul(p,q):
+  return p*q
+def div(p,q):
+  return p/q
+
+print("enter your choise \na.add \nb.sub \nc.mul \nd.div")
+
+choise=input("enter the operator")
+
+if choise=='a'or choise=='b'or choise=='c'or choise=='d': 
+  
+  num1=int(input("enter the num1:"))
+  num2=int(input("enter the num2:"))
+  if choise=='a':
+    print("the addition of",num1,"+",num2,"=",add(num1,num2))
+  elif choise=='b':
+    print("the subration of",num1,"-",num2,"=",sub(num1,num2))
+  elif choise=='c':
+    print("the multiplication of",num1,"*",num2,"=",mul(num1,num2))
+  elif choise=='d':
+    print("the division of",num1,"/",num2,"=",div(num1,num2))
+else:
+  print("invalid")
